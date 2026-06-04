@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Alex Morgan</title>
+  <meta name="description" content="Explore production-ready projects built with semantic markup, dynamic ARIA live-regions, and keyboard-navigable patterns.">
+  <link rel="canonical" href="https://yourdomain.com/projects.html">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header role="banner">
+    <div class="logo">
+      <a href="index.html" aria-label="Alex Morgan Home">AlexMorgan<span aria-hidden="true">.dev</span></a>
+    </div>
+    <nav aria-label="Main Navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html" aria-current="page">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section aria-labelledby="projects-title">
+      <h1 id="projects-title">Selected Case Studies</h1>
+      <p>All projects listed below pass automated a11y testing engines and manual keyboard navigation protocols.</p>
+
+      <div class="project-grid">
+        
+        <article class="project-card" aria-labelledby="proj1-title">
+          <figure>
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80" alt="Dashboard interface showing clean data charts with high-contrast UI colors.">
+            <figcaption>Fig 1. Interface design mockup for Accessible E-Commerce.</figcaption>
+          </figure>
+          <h2 id="proj1-title">Accessible E-Commerce Platform</h2>
+          <p>A fully accessible online storefront featuring semantic shopping carts, custom keyboard traps for modals, and ARIA announcements for dynamic price updates.</p>
+          <a href="https://github.com" aria-describedby="proj1-title">View Repository <span class="sr-only">(GitHub)</span></a>
+        </article>
+
+        <article class="project-card" aria-labelledby="proj2-title">
+          <figure>
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80" alt="Clean semantic layout showing data visualization cards.">
+            <figcaption>Fig 2. Analytics data structure representation.</figcaption>
+          </figure>
+          <h2 id="proj2-title">Data Analytics Dashboard</h2>
+          <p>Built with accessible complex tables utilizing clear ID headers mappings, ensuring deep readability for screen reader users parsing dense numeric metrics.</p>
+          <a href="https://github.com" aria-describedby="proj2-title">View Repository <span class="sr-only">(GitHub)</span></a>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <p>&copy; 2026 Alex Morgan. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

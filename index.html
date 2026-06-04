@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Alex Morgan | Frontend Developer & Accessibility Specialist</title>
+  <meta name="description" content="Portfolio of Alex Morgan, a Frontend Developer specializing in building highly accessible, performant, and semantic web experiences.">
+  <link rel="canonical" href="https://yourdomain.com/index.html">
+  
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourdomain.com/">
+  <meta property="og:title" content="Alex Morgan | Frontend Developer">
+  <meta property="og:description" content="Portfolio of Alex Morgan, specializing in accessible and semantic web experiences.">
+  <meta property="og:image" content="https://yourdomain.com/assets/og-image.jpg">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header role="banner">
+    <div class="logo">
+      <a href="index.html" aria-label="Alex Morgan Home">AlexMorgan<span aria-hidden="true">.dev</span></a>
+    </div>
+    
+    <nav aria-label="Main Navigation">
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    
+    <section aria-labelledby="hero-heading">
+      <h1 id="hero-heading">Building a Digital World Everyone Can Use</h1>
+      <p>Hi, I'm Alex. I am a frontend engineer dedicated to clean code, semantic HTML, and universal web accessibility (WCAG).</p>
+      <a href="projects.html" class="cta-button">View My Work <span class="sr-only">(opens projects page)</span></a>
+    </section>
+
+    <hr>
+
+    <section aria-labelledby="skills-heading">
+      <h2 id="skills-heading">Core Specializations</h2>
+      <div class="skills-list">
+        <article>
+          <h3>Semantic Architecture</h3>
+          <p>Structuring data logic with correct HTML5 elements to optimize crawlability for SEO and reliability for screen readers.</p>
+        </article>
+        
+        <article>
+          <h3>WCAG Remediation</h3>
+          <p>Auditing and upgrading legacy platforms to meet Section 508 and WCAG 2.2 AA compliance targets.</p>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <footer role="contentinfo">
+    <p>&copy; 2026 Alex Morgan. All rights reserved.</p>
+    <nav aria-label="Footer Social Navigation">
+      <ul>
+        <li><a href="https://github.com" target="_blank" rel="noopener">GitHub <span class="sr-only">(opens in new tab)</span></a></li>
+        <li><a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn <span class="sr-only">(opens in new tab)</span></a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

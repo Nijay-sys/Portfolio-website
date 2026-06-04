@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me | Alex Morgan</title>
+  <meta name="description" content="Get in touch with Alex Morgan for accessibility audits, semantic frontend development, or contract work.">
+  <link rel="canonical" href="https://yourdomain.com/contact.html">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header role="banner">
+    <div class="logo">
+      <a href="index.html" aria-label="Alex Morgan Home">AlexMorgan<span aria-hidden="true">.dev</span></a>
+    </div>
+    <nav aria-label="Main Navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section aria-labelledby="form-heading">
+      <h1 id="form-heading">Let's Build Something Inclusive</h1>
+      <p>Have a project in mind or need assistance ensuring your app is WCAG compliant? Drop me a message below.</p>
+
+      <form action="#" method="POST" novalidate>
+        
+        <fieldset>
+          <legend>Your Professional Information</legend>
+          
+          <div class="form-group">
+            <label id="label-name" for="user-name">Full Name <span class="required" aria-hidden="true">*</span></label>
+            <input 
+              type="text" 
+              id="user-name" 
+              name="name" 
+              required 
+              autocomplete="name"
+              aria-required="true">
+          </div>
+
+          <div class="form-group">
+            <label id="label-email" for="user-email">Email Address <span class="required" aria-hidden="true">*</span></label>
+            <input 
+              type="email" 
+              id="user-email" 
+              name="email" 
+              required 
+              autocomplete="email"
+              aria-required="true"
+              aria-describedby="email-error">
+            <span class="error-msg" id="email-error" aria-live="polite"></span>
+          </div>
+
+          <div class="form-group">
+            <label id="label-message" for="user-message">Message Details <span class="required" aria-hidden="true">*</span></label>
+            <textarea 
+              id="user-message" 
+              name="message" 
+              rows="6" 
+              required
+              aria-required="true"></textarea>
+          </div>
+
+          <button type="submit">Send Message</button>
+        </fieldset>
+
+      </form>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <p>&copy; 2026 Alex Morgan. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
