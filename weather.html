@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real-Time Weather Dashboard</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header>
+    <div class="logo"><a href="index.html">AlexMorgan.dev</a></div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="todo.html">Task App</a></li>
+        <li><a href="weather.html" aria-current="page">Weather</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <h1>Live Weather Dashboard</h1>
+    <p>Retrieve live, accurate weather conditions using asynchronous API endpoints fetching open metrics globally.</p>
+
+    <section class="weather-wrapper">
+      <form id="weather-form" aria-label="Search weather by city name">
+        <div class="form-group">
+          <label for="city-input">Enter City Name:</label>
+          <div class="input-actions-group">
+            <input 
+              type="text" 
+              id="city-input" 
+              required 
+              placeholder="e.g., London, Tokyo, New York"
+              aria-required="true"
+            >
+            <button type="submit" id="search-btn">Get Weather</button>
+          </div>
+        </div>
+      </form>
+
+      <div id="error-display" class="error-msg sr-only" role="alert"></div>
+      <div id="loading-indicator" class="loading-spinner sr-only">Fetching live metrics...</div>
+
+      <div id="weather-card" class="weather-card hidden" aria-live="warm">
+        <h2 id="location-name">City, Country</h2>
+        <p id="weather-description">Condition description</p>
+        
+        <div class="metrics-grid">
+          <div class="metric-item">
+            <span class="metric-label">Temperature</span>
+            <span class="metric-value" id="temp-val">-- &deg;C</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-label">Humidity</span>
+            <span class="metric-value" id="humidity-val">-- %</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-label">Wind Speed</span>
+            <span class="metric-value" id="wind-val">-- m/s</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Alex Morgan. All rights reserved.</p>
+  </footer>
+
+  <script src="js/weather.js"></script>
+</body>
+</html>
